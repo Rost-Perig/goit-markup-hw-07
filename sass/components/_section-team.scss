@@ -1,0 +1,39 @@
+.section-team {
+  @extend %sectionPadding;
+  background-color: $light-second-bg;
+}
+
+.team-list {
+  @include centeredFlex(center, center, wrap);
+}
+
+.team-list__item {
+  width: 270px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: $white-basis;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.team-list__cell {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.team-list__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-list--social-list {
+  margin-top: 16px;
+}

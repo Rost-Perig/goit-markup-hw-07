@@ -1,0 +1,91 @@
+.site-footer {
+  min-width: 1200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $darck-bg;
+}
+
+.site-footer__container {
+  @include centeredFlex(baseline);
+}
+
+.foo-address {
+  margin-top: 20px;
+}
+
+.foo-navi__goo-maps {
+  color: $white-basis;
+  line-height: 1.7;
+  transition: color $transit-properties;
+
+  &:hover,
+  &:focus {
+    color: $accent-brand;
+  }
+}
+
+.foo-navi__link {
+  color: $white-opacity;
+  line-height: 1.71;
+  transition: color $transit-properties;
+
+  &:hover,
+  &:focus {
+    color: $accent-brand;
+  }
+}
+
+.foo-navi__item + .foo-navi__item {
+  margin-top: 9px;
+}
+
+.footer-item__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-basis;
+}
+
+.footer-item--social {
+  margin-left: 70px;
+}
+
+.footer-item--mailing {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.mailing-form {
+  @include centeredFlex();
+
+  &__input {
+    @include centeredFlex();
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+    /*outline: none; убирает рамку при нажатии, НО УБИРАЕТ ИНТЕРАКТИВНОСТЬ!*/
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $white-basis;
+    background-color: $darck-bg;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__send-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: $white-basis;
+  }
+}

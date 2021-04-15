@@ -1,0 +1,12 @@
+@mixin centeredFlex(
+  $al-It: center,
+  $just-Cont: center,
+  $fl-wrap: nowrap,
+  $fl-dir: row
+) {
+  display: flex;
+  align-items: $al-It;
+  justify-content: $just-Cont;
+  flex-wrap: $fl-wrap;
+  flex-direction: $fl-dir;
+}
