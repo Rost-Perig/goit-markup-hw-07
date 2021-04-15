@@ -1,9 +1,12 @@
-.top-line__container {
-  @include centeredFlex(center, space-between);
-  min-width: 1200px;
+.top-line {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: $color-line;
+}
+
+.top-line__container {
+  @include centeredFlex(center, space-between);
+  min-width: 1200px;
 }
 
 .top-line__navi {
